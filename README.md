@@ -30,4 +30,5 @@ select yyyymmdd,title,is_valid from richgo.realestate_news
 
 ## 5. references
 https://machinelearningmastery.com/naive-bayes-classifier-scratch-python/
+
 https://www.kdnuggets.com/2020/07/spam-filter-python-naive-bayes-scratch.html
