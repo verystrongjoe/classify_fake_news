@@ -4,8 +4,14 @@
 아래 테이블에서 뉴스 제목(title) 가짜 여부(is_valid), 일자(yyyymmdd) 정도 조회
 select yyyymmdd,title,is_valid from richgo.realestate_news
 
-skeleton이라서 데이터 전처리와 유의미한 토큰을 정제하는 작업을 추가이 필요
---> 데이터 전처리 필요한 부분 todo 주석처리
+skeleton이라서 데이터 전처리와 유의미한 토큰 정제하는 작업을 추가 필요
+ - 데이터 전처리 필요한 부분 todo 주석처리
+ - koNLPy 라이브러리 안에 있는 한국어 형태소 분석기들 아래것으로 사용하면 토큰 분리도 용이함
+    1. mecab (속도가 가장 빠름, mac os에서만 사용 가능)
+    2. komoran
+    3. kokoma
+    4. okt(twitter)
+
 
 ## 2. 사용한 모델
 간단한 머신러닝 기법인 naive bayes classifier을 사용하였음
